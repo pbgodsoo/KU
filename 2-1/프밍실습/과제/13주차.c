@@ -12,7 +12,7 @@ int main()
     srand(time(NULL));
     n = rand()%100 + 1;
 
-    fprintf(fp, "%dÀÇ Á¦°ö±ÙÀº %fÀÔ´Ï´Ù.\n", n, sqrt(n));
+    fprintf(fp, "%dÃ€Ã‡ ÃÂ¦Â°Ã¶Â±Ã™Ã€Âº %fÃ€Ã”Â´ÃÂ´Ã™.\n", n, sqrt(n));
 
     fclose(fp);
 }
