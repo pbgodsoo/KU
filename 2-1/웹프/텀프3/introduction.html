@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>introduction</title>
+    <link href="header.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Sarabun&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
+        body{
+            background-color: rgb(172, 167, 167);
+        }
+        .myname{
+            margin: 180px;
+        }
+        .name{
+            margin: 50px auto;
+            font-size: 30pt;
+            font-family: 'Pathway Gothic One', sans-serif;
+            text-align: center;
+            background-image: url(vv.jpg);
+            height: 900px;
+        }
+        .name h1{
+            font-size: 85pt;
+            font-family: 'Sarabun', sans-serif;
+        }
+        .tag{
+            width: 340px;
+            height: 250px;
+            float: left;
+            margin: 0 65px;
+            text-align: center;
+            font-family: 'Nanum Gothic Coding', monospace;
+            font-size: 13pt;
+            line-height: 150%;
+            display: table;
+        }
+        .tag-warpper{
+            width: 2000px;
+            height: 100px;
+            margin: 0 auto;
+            padding-top: 130px;
+            padding-bottom: 320px;
+            display: table-cell;
+            vertical-align: middle;
+        }
+        .tag p{text-align: center;}
+        html{
+            scroll-behavior:smooth;
+        }
+        .button{
+            text-align: right;
+            margin-top: 50px;
+        }
+        #move_page{
+            text-align: right;
+            margin: 50px;
+            border: 1px solid black;
+            background-color: rgba(0,0,0,0);
+            color: black; padding: 5px;
+            border-radius: 5px;
+        }
+        #move_page:hover{ color:white; 
+        background-color: black; }
+    </style>
+
+
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <div class = "wrapper">
+            <a href = "index.html"><h1>BEOM</h1></a>
+            <nav>
+                <ul class = "nav">
+                    <a href = "introduction.html">introduction</a>
+                    <a href = "se.html">Security</a>
+                    <a href = "login.html">login</a>                
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="name">
+        <div class="button">
+            <input id="move_page" type="button" value="▼" onclick="location.href = 'javascript:window.scrollTo( 0, 950 )';">
+        </div>
+        <div class="myname">
+            <H3><I>My name is</I></H3>
+            <H1>BEOMSOO PARK</H1></P>
+        </div>
+        <br><br>
+    </div>
+    
+    <div class="button">
+        <input id="move_page" type="button" value="▲" onclick="location.href = 'javascript:window.scrollTo( 0, 0)';">
+    </div>
+    <div class="tag-warpper">
+        <div class="tag">
+            <img src = "프로필.png"alt = "프로필" width="80" height="80">
+            <p><b>profile</b></p><br><hr><br>
+            이름 : 박범수<br>
+            성별 : 남성<br>
+            생년월일 : 2001.11.15<br>
+            전화번호 : 010-5582-7532<br>
+            이메일 : linoleca@naver.com
+        </div>
+        <div class="tag">
+            <img src = "커리어.png"alt = "커리어" width="80" height="80">
+            <p><b>career</b></p><br><hr><br>
+            미금초등학교 2014년 졸업<br>
+            미금중학교 2017년 졸업<br>
+            도농고등학교 2020년 졸업<br>
+            건국대학교 소프트웨어전공 2020년 입학
+        </div>
+        <div class="tag">
+            <img src = "가족.png"alt = "가족" width="80" height="80">
+            <p><b>family</b></p><br><hr><br>
+            아버지<br>
+            어머니<br>
+            남동생
+        </div>
+        <div class="tag">
+            <img src = "IT.png"alt = "프로필" width="80" height="80">
+            <p><b>ItSkill</b></p><br><hr><br>
+            C, JAVA<br>
+            Python<br>
+            HTML, CSS<br>
+            MySQL
+        </div>
+    </div>
+</body>
+</html>

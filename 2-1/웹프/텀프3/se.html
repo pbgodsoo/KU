@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security</title>
+    <link href="header.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+    html{
+        scroll-behavior:smooth;
+    }
+    .page{
+        height: 900px;
+    }
+    .botton{
+        text-align: right;
+        margin-top: 10px;
+    }
+    #move_page{
+        text-align: right;
+        border: 1px solid rgb(56, 184, 216);
+        background-color: rgba(0,0,0,0);
+        color: skyblue; padding: 5px;
+    }
+    #move_page:hover{ color:white; 
+        background-color: powderblue; 
+    }
+    /*정보보안이란*/
+    .ti{
+        font-size: 15pt;
+        font-family: 'Nanum Gothic', sans-serif;
+    }
+    .se_wrapper{
+        margin-left: 70px;
+        width: 1700px;
+        padding-top: 120px;
+    }
+    .security{
+        float: left;
+        width: 1400px;
+        padding-right: 50px;
+    }
+    .pic{
+        text-align: center;
+        padding: 40px;
+        float: left;
+    }
+    /*보안 중요성*/
+    .ransom{
+        float: left;
+        width: 900px;
+        padding-top: 60px;
+    }
+    .ranpic{
+        padding: 40px;
+    }
+    /*해킹 대응방안*/
+    fieldset {
+        margin: 45px; 
+        margin-left: 170px;
+        padding: 20px; 
+        padding-left: 50px;
+        float: left;
+        width: 450px;
+        height: 200px;
+        margin-top: 100px;
+    }
+    fieldset legend {  
+        font-weight: bold;
+        font-size: 25pt;
+        font-family: 'Nanum Gothic', sans-serif;
+    }
+    ol{
+        font-family: 'Nanum Gothic Coding', monospace;
+        font-size: 20pt;
+    }
+
+    /*보안 시장 전망*/
+    .graph_wrapper{
+        margin: 70px 70px;
+        width: 1700px;
+    }
+    .se_graph{
+        width: 1700px;
+        margin: 50px;
+    }
+    .graph{
+        float: left;
+        width: 600px;
+        margin: 20px 70px;
+        padding: 20px 50px;
+        text-align: center;
+    }
+    .text{
+        height: 300px;;
+        padding: 230px;
+        padding-top: 500px;
+        font-size: 15pt;
+        font-family: 맑은 고딕;
+    }
+
+    /*유튜브 링크*/
+    .p3_wrapper{
+        width: 1700px;
+    }
+    .youtube{
+        margin-left: 120px;
+        padding: 0 20px;
+        float: left;
+    }
+    /*게임*/
+    .box{
+        margin: 150px 65px;
+        padding: 0 70px;
+        float: left;
+    }
+    .game{
+        width: 250px;
+        height: 80px;
+        border: 1px solid rgb(36, 77, 87);
+        background-color: gold;
+        color: rgb(9, 16, 19);
+        padding: 5px;
+    }
+    .game:hover{ 
+        color:yellow; 
+        background-color: powderblue;
+    }
+    .cal{
+        width: 250px;
+        height: 80px;
+        border: 1px solid rgb(36, 77, 87);
+        background-color: skyblue;
+        color: rgb(9, 16, 19);
+        padding: 5px;
+    }
+    .cal:hover{
+        color:tan; 
+        background-color: mediumaquamarine;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div class = "wrapper">
+            <a href = "index.html"><h1>BEOM</h1></a>
+            <nav>
+                <ul class = "nav">
+                    <a href = "introduction.html">introduction</a>
+                    <a href = "se.html">Security</a>
+                    <a href = "login.html">login</a>                
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page">
+        <div class="se_wrapper">
+            <div class="security">
+                <div class="ti">
+                    <h1>정보보안이란?</h1>
+                </div><hr>
+                <div class="con">
+                    <p><b>정보보안</b>이란 컴퓨터/네트워크로 확대, 발전하는 정보환경에서 모든 정보자원(하드웨어, 소프트웨어 데이터터 등)을 위/변조, 유출, 훼손 등과 같은 정보보안 사고로부터 보호하는 것을 의미한다.
+                    정보보안에는 기본적으로 세 가지 목표가 있는데 기밀성(Confindentiality), 무결성(Integrity), 가용성(Availability)이다.</p>
+                </div>
+            </div>
+            <div class="pic">
+                <a href = "#" onclick="
+                var target = document.querySelector('body');
+                if(this.scr === 'moon.png'){
+                    target.style.backgroundColor = '#2E2E2E';
+                    target.style.color = 'white';
+                    this.scr = 'sun.png'
+                } else{
+                    target.style.backgroundColor = 'white';
+                    target.style.color = 'black';
+                    this.scr = 'moon.png';
+                }">
+                <img src = "moon.png"alt = "다크모드" width="130" height="130"></a>
+            </div>
+            <div class="botton" style="margin-top: 40px;">
+                <input id="move_page" type="button" value="A" onclick="location.href = 'javascript:window.scrollTo( 0, 850 )';">
+            </div>
+        </div>
+        <div class="se_wrapper">
+            <div class="ransom">
+                <div class="ti">
+                    <h1>보안 중요성</h1>
+                </div><hr>
+                <div class="ranpic">
+                    <img src = "렌섬웨어1.png"alt = "랜섬웨어" width="310" height="160"><br><br>
+                    <img src = "렌섬웨어2.png"alt = "랜섬웨어2" width="900" height="75">
+                </div>
+            </div>
+            <div>
+                <fieldset>
+                    <legend>해킹 대응방안</legend>
+                    <ol>
+                        <li> 백신 업데이트 및 PC포맷하기
+                        <li> 주기적으로 비밀번호 변경하기
+                        <li> 패스워드 생성기 사용하기
+                        <li> 로그인 시 인증 단계 심화하기
+                        <li> 해외 IP 로그인 차단하기
+                    </ol>  
+                </fieldset>
+            </div>
+        </div>
+    </div>
+
+    <div class="page">
+        <div class="graph_wrapper">
+            <div class="ti">
+                <h1>보안 산업 전망</h1>
+            </div>
+            <div class="botton" style="margin-top: -10px;">
+                <input id="move_page" type="button" value="B" onclick="location.href = 'javascript:window.scrollTo( 0, 1700 )';">
+            </div>
+            <div class="se_graph">
+                <div class="graph">
+                    <img src = "보안기업.png"alt = "보안기업" width="400" height="400">
+                </div>
+                <div class="graph">
+                    <img src = "보안 시장.png"alt = "보안시장" width="400" height="400">
+                </div>
+            </div>
+            <div class="text">
+                <b>[2017~2020 정보보산업 실태조사]</b>에 따르면 국내 정보보안 기업은 왼쪽 그래프와 같이 연평균 10.4% 정도씩 꾸준한 상승세를 보이고 있으며, 
+                <b>[2021 국내외 보안시장 전망보고서]</b>에 따르면 2020년 국내 보안시장의 규모는 5조 8,260억원으로 지난해 대비 2.3% 성장하였으며 빅데이터 
+                조사에 따라 2021년에는 6조 414억원, 2022년에는 6조 3,195억원으로 오른쪽 그래프와 같이 지속적 성장률을 보여줄 것으로 예측되고 있다.
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="page">
+        <div class="p3_wrapper">
+            <div class="botton" style="margin-right: -65px; margin-top: -10px;">
+                <input id="move_page" type="button" value="C" onclick="location.href = 'javascript:window.scrollTo( 0, 0 )';">
+            </div>
+            <div class="youtube">
+                <iframe width="760" height="475" src="https://www.youtube.com/embed/UCNiajY2sFs" title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="box">
+                <a href="game.html" target=_blank>
+                <input type="button"  class="game" value="참참참 게임하기"></a>
+                <a href="cal.html" target=_blank>
+                <input type="button"  class="cal" value="계산기"></a>
+            </div>
+        </div>
+    </div>
+
+
+    
+</body>
+</html>

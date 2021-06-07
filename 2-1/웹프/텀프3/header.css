@@ -1,0 +1,25 @@
+*{margin: 0; padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.wrapper{
+    width:80%; margin:0 auto;
+}
+header{
+    height: 75px; background-color:#68546B; border: 1px solid #253342; position: fixed; width: 100%; top: 0; left: 0;
+}
+a h1{
+    color:white; line-height: 75px; float: left;
+}
+.nav{ float:right;}
+.nav a{
+    float:left;
+    line-height: 75px;
+    color: white;
+    padding: 0 15px;
+    display: block;
+}
+p { 
+    font : normal 24px verdata;
+}

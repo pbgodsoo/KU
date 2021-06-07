@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link href="header.css" rel="stylesheet" type="text/css">
+    <link href="login.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+        <div class = "wrapper">
+            <a href = "index.html"><h1>BEOM</h1></a>
+            <nav>
+                <ul class = "nav">
+                    <a href = "introduction.html">introduction</a>
+                    <a href = "se.html">Security</a>
+                    <a href = "login.html">login</a>                
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="inner_login">
+        <div class="login_my">
+    
+            <form method="post" id="authForm" action="index.html">
+                <fieldset>
+                <div class="box_login">
+                    <div class="inp_text">
+                    <label for="loginId" class="screen_out">아이디</label>
+                    <input type="email" id="loginId" name="loginId" placeholder="ID" >
+                    </div>
+                    <div class="inp_text">
+                    <label for="loginPw" class="screen_out">비밀번호</label>
+                    <input type="password" id="loginPw" name="password" placeholder="Password" >
+                    </div>
+                </div>
+                <button type="submit" class="btn_login" onclick="alert('로그인 성공!')">로그인</button>
+                <div class="login_append">
+                    <div class="inp_chk">
+                    <input type="checkbox" id="keepLogin" class="inp_radio"  name="keepLogin">
+                    <label for="keepLogin" class="lab_g">
+            <span class="img_top ico_check"></span>
+            <span class="txt_lab">로그인 상태 유지</span>
+            </label>
+                    </div>
+                    <span class="txt_find">
+                    <a href="sign.html" class="link_find" target=_blank>회원가입</a>
+                    </span>
+                </div>
+                
+                </fieldset>
+            </form>
+            
+        </div>
+    </div>
+
+
+</body>
+</html>

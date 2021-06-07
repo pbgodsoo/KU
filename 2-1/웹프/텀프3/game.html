@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <TITLE> 참참참 </TITLE>
+          <SCRIPT LANGUAGE="JavaScript">
+      
+            function playGame(choice) {
+                with (document.game) {
+                    comp = Math.round((Math.random() * 2) + 1); 
+                    
+                    var choiceName;
+                    if (comp == 1) choiceName = "가운데";
+                    if (comp == 2) choiceName = "오른쪽";
+                    if (comp == 3) choiceName = "왼 쪽";
+                    
+                    msg.value = "상대가 선택한 것은 " + choiceName + " :  ";
+                    
+                    switch(choice) { 
+                        case 1 : 
+                                if (comp == 1) {  
+                                    loss.value++; msg.value += "졌습니다";
+                                    break; }
+                                if (comp == 2) {  
+                                    win.value++;  msg.value += "이겼습니다!!";     
+                                    break; }
+                                if (comp == 3) {  
+                                    win.value++; msg.value += "이겼습니다!!";      
+                                    break; }
+                        case 2 : 
+                                if (comp == 1) {  
+                                    win.value++;  msg.value += "이겼습니다!!";      
+                                    break; }
+                                if (comp == 2) {  
+                                    lose.value++; msg.value += "졌습니다"; 
+                                    break; }
+                                if (comp == 3) {  
+                                    win.value++; msg.value += "이겼습니다";     
+                                    break; }
+                        case 3 : 
+                                if (comp == 1) {  
+                                    win.value++;  msg.value += "이겼습니다!!";     
+                                    break; }
+                                if (comp == 2) {  
+                                    win.value++; msg.value += "이겼습니다!!!";     
+                                    break; }
+                                if (comp == 3) {  
+                                    lose.value++; msg.value += "졌습니다."; 
+                                    break; }
+                    }
+                    msg.value += '  계속!';
+                }
+            }
+      
+        </SCRIPT>
+        <style type="text/css">
+        body{
+            margin-top: 200px;
+            margin-left: 700px;
+        }
+        </style>
+    </HEAD>
+    <BODY>
+        <span style="font-size: 30pt;"> 참참참 게임!! </span>
+        <FORM NAME="game">
+            <TABLE BORDER="1" CELLPADDING="10" >
+              <TR> 
+                <TD ALIGN="center"><INPUT TYPE="button" VALUE="왼 쪽" onClick="playGame(3);"></td>
+                <TD ALIGN="center"><INPUT TYPE="button" VALUE="가운데" onClick="playGame(1);"></td>
+                <TD ALIGN="center"><INPUT TYPE="button" VALUE="오른쪽" onClick="playGame(2);"></td>
+              </TR>
+              <TR> 
+                <TD COLSPAN="4" ALIGN="center"> 
+                  <INPUT TYPE="text" NAME="msg" SIZE="45">
+                </TD>
+              </TR>
+              <TR> 
+                <TD COLSPAN="4" ALIGN="center"> <b> 
+                  <INPUT TYPE="text" NAME="win" READONLY VALUE="0" SIZE="2">
+                  번 승리, 
+                  <INPUT TYPE=text NAME="loss" READONLY VALUE="0" SIZE="2">
+                  번 패배, 
+              </TR>
+            </TABLE>
+        </FORM>
+    </BODY>
+    
+    </HTML>
