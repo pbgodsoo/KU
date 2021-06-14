@@ -23,9 +23,9 @@ int main()
         printf("이름: ");
         scanf("%s", s.name);
         printf("학번: ");
-        scanf("%d", s.name);
+        scanf("%d", &s.hakbun);
         printf("점수: ");
-        scanf("%d", s.name);
+        scanf("%d", &s.score);
         printf("\n");
         fwrite(&s, sizeof(struct student), 1, fp);
     }
