@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign</title>
+    <style type="text/css">
+    fieldset {
+        padding:5%;
+        margin-top: 50pt;
+        margin-right: 30%;
+        margin-left: 30%;
+        background-color: rgba(100, 148, 237, 0.377);
+        text-align: left;
+    }
+    fieldset legend {  
+        font-weight:bold;
+        font-size: 35pt;
+        font-family: "ELAND 초이스 Light"; 
+        color:#0A2A0A;
+        text-align: center;
+    }
+    input{
+      font-size: 17pt;
+    }
+    </style>
+</head>
+<body>
+
+  <div>
+    <fieldset>
+        <legend>회원가입</legend>
+        <FORM ACTION="OK.html" METHOD="post">
+            <INPUT TYPE="text" NAME="ID" SIZE="14" placeholder="아이디"><br><br>
+            <INPUT TYPE="password" NAME="password" SIZE="14" placeholder="비밀번호"><br><br>
+            <INPUT TYPE="password" NAME="password" SIZE="14" placeholder="비밀번호 재확인"><br><br>
+            <INPUT TYPE="text" NAME="name" SIZE="10" placeholder="이름"><br><br>
+            <INPUT TYPE="TEXT" NAME="tel1" SIZE="3" VALUE="010"> - <INPUT TYPE="TEXT"  NAME="tel2" SIZE="4"> -  <INPUT TYPE="TEXT" NAME="tel3" SIZE="4"><br><br>
+            <SELECT SIZE="1" NAME="job">
+              <OPTION SELECTED> 남자</OPTION>
+              <OPTION> 여자 </OPTION>
+              <OPTION> 선택안함 </OPTION>
+            </SELECT><br><br>
+            <INPUT TYPE="TEXT" NAME="birth1" SIZE="4">년 <INPUT TYPE="TEXT"  NAME="birth2" SIZE="2">월 <INPUT TYPE="TEXT" NAME="birth3" SIZE="2">일<br><br>
+            <INPUT TYPE="text" NAME="email" SIZE="20" placeholder="본인 확인 이메일"><br><br>
+            <INPUT TYPE="submit" VALUE="가입하기">
+        </FORM>
+    </fieldset>
+</div>
+
+</body>
+</html>

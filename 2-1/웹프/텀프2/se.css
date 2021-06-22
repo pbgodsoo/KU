@@ -1,0 +1,18 @@
+.ti{
+    font-size: 15pt;
+    font-family: "ELAND 초이스 Medium";
+    margin: 0;
+}
+.ti h2{
+    padding: 7px;
+}
+.con{
+    font-size: 12pt;
+    font-family: 맑은 고딕;
+}
+.con ul{
+    list-style-type: square;
+}
+.pic{
+    text-align: center;
+}
