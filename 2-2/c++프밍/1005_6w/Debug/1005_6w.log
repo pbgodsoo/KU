@@ -1,0 +1,5 @@
+﻿  1005_6w(박범수).cpp
+C:\Users\BEOMSOO\Desktop\KU\2-2\c++ 프로그래밍\workspace\1005_6w\1005_6w(박범수).cpp(98,7): error C2668: 'msg': 오버로드된 함수에 대한 호출이 모호합니다.
+C:\Users\BEOMSOO\Desktop\KU\2-2\c++ 프로그래밍\workspace\1005_6w\1005_6w(박범수).cpp(92,6): message : 'void msg(int,std::string)'일 수 있습니다.
+C:\Users\BEOMSOO\Desktop\KU\2-2\c++ 프로그래밍\workspace\1005_6w\1005_6w(박범수).cpp(88,6): message : 또는       'void msg(int)'
+C:\Users\BEOMSOO\Desktop\KU\2-2\c++ 프로그래밍\workspace\1005_6w\1005_6w(박범수).cpp(98,7): message : 인수 목록 '(int)'을(를) 일치시키는 동안
